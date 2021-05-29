@@ -1,0 +1,69 @@
+.cart-with-badge {
+    position: relative;
+}
+
+.cart-with-badge .cart-icon {
+    height: 3rem;
+}
+
+.cart-with-badge .badge-number {
+    position: absolute;
+    font-weight: 600;
+    padding: 0.25rem 0.55rem;
+    bottom: 2.5rem;
+    left: 2.34rem;
+    font-size: 0.9rem;
+    border-radius: 50%; 
+    background: #EF4444;
+    color: #F9FAFB;
+    box-shadow:0 0 1px #333;
+}
+
+.wishlist-with-badge {
+    position: relative;
+}
+
+.wishlist-with-badge .wishlist-icon {
+    height: 3rem;
+}
+
+.wishlist-with-badge .badge-number {
+    position: absolute;
+    font-weight: 600;
+    padding: 0.25rem 0.55rem;
+    bottom: 2.5rem;
+    left: 2.25rem;
+    font-size: 0.9rem;
+    border-radius: 50%; 
+    background: #EF4444;
+    color: #F9FAFB;
+    box-shadow:0 0 1px #374151;
+}
+
+.avatar-with-badge {
+    position: relative;
+}
+
+.avatar-with-badge .badge-online {
+    position: absolute;
+    width: 0.938rem;
+    height: 0.938rem;
+    border: 2px solid white;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%; 
+    background: #10B981;
+    box-shadow:0 0 1px #333;
+}
+
+.avatar-with-badge .badge-offline {
+    position: absolute;
+    width: 0.938rem;
+    height: 0.938rem;
+    border: 2px solid white;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%; 
+    background: #6B7280;
+    box-shadow:0 0 1px #333;
+}

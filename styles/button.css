@@ -1,0 +1,133 @@
+@import url('./utilities.css');
+
+.btn {
+    display: inline;
+    margin: 1rem;
+    padding: 0.6rem 0.9rem;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.btn-simple {
+    border: 1px solid var(--mono1000);
+    background-color: var(--mono1000);
+    color: var(--mono100);
+}
+
+.btn-simple:hover {
+    background-color: #242424;
+    color: var(--mono100);
+}
+
+.btn-simple:focus {
+    background-color: var(--mono1000);
+    color: var(--mono100);
+}
+
+.btn-outline {
+    border: 1px solid var(--mono1000);
+    background-color: var(--mono100); 
+    color: var(--mono1000);
+}
+
+.btn-outline:hover {
+    background-color: var(--mono1000);
+    color: var(--mono100);
+}
+
+.btn-outline:focus {
+    background-color: var(--mono1000);
+    color: var(--mono100);
+}
+
+.btn-clear {
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    border: 1px solid transparent;
+}
+
+.btn-clear:hover {
+    background-color: #F3F4F6;
+    color: var(--mono1000);
+    border: 1px solid #F3F4F6;
+}
+
+.btn-clear:focus {
+    background-color: #F3F4F6;
+    color: var(--mono1000);
+    border: 1px solid #F3F4F6;
+}
+
+.btn-with-icon {
+    display: inline-flex;
+}
+
+.btn-with-icon .material-icons {
+    padding-top: 1px;
+    align-self: center;
+}
+
+.btn-with-icon .material-icons-round {
+    padding-top: 1px;
+    align-self: center;
+}
+
+.btn-with-icon .btn-text {
+    padding-left: 0.4rem;
+}
+
+.floating-button {
+    position: fixed;
+    background-color: var(--mono900);
+    bottom: 1rem;
+    right: 1rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    font-size: 36px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: .3s;
+    z-index: 10;
+}
+
+.floating-button span {
+    color: white;
+}
+
+.floating-button:hover {
+    background-color: var(--mono1000);
+}
+
+.btn-outline:focus {
+    background-color: var(--mono900);
+}
+
+.btn-dismiss {
+    border: none;
+    background: transparent;
+    color: #333333;
+    padding: 0.18rem 0.18rem 0 0.18rem;
+    border-radius: 50%;
+}
+
+.btn-dismiss:hover {
+    background-color: #F3F4F6;
+    border-radius: 50%;
+    padding: 0.18rem 0.18rem 0 0.18rem;
+    color: #545454;
+}
+
+.btn-dismiss:focus {
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 0.18rem 0.18rem 0 0.18rem;
+}
