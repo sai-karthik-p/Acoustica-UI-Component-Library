@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html id="top" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <title>Acoustica UI</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/prism/prism.css" />
+</head>
+<body>
+
+    <div class="doc-site-layout">
+
+        <div class="header">
+            <a class="h-full row flex-center ml-auto mr-8 navbar-logo-container" href="/">
+                <img class="navbar-logo-image" alt="Acoustica Logo" src="/assets/acoustica-logo-white.png">
+                <span class="ml-3">Acoustica UI</span>
+            </a>
+        </div>
+
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li><a href="/"> Acoustica UI <span class="mt-1">CSS Component Library</span></a></li>
+                <li><a href="#getting_started" onclick="document.getElementById('openSidebarMenu').checked = false;">Getting Started</a></li>
+                <li><a href="#avatar" onclick="document.getElementById('openSidebarMenu').checked = false;">Avatar</a></li>
+                <li><a href="#alert" onclick="document.getElementById('openSidebarMenu').checked = false;">Alert</a></li>
+                <li><a href="#badge" onclick="document.getElementById('openSidebarMenu').checked = false;">Badge</a></li>
+                <li><a href="#button" onclick="document.getElementById('openSidebarMenu').checked = false;">Button</a></li>
+                <li><a href="#card" onclick="document.getElementById('openSidebarMenu').checked = false;">Card</a></li>
+            </ul>
+        </div>
+
+
+        <div class="documentation mt-0">
+
+            <section id="getting_started" class="mt-0">
+
+                <div class="section-header-container mt-0">
+                    <h2>Getting started</h2>
+                    <h3>Linking in the HTML File:</h3>
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;link href=&quot;https://acoustica-ui.netlify.app/styles/index.css&quot; rel=&quot;stylesheet&quot; /&gt;
+                </code></pre>
+
+                <div class="section-header-container">
+                    <h3>Importing in the CSS File:</h3>
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">@import url("https://acoustica-ui.netlify.app/styles/index.css" rel="stylesheet");
+                </code></pre>
+
+            </section>
+
+            <section id="avatar">
+
+                <div class="section-header-container">
+                    <h2>Avatar</h2>
+                    <p>The Avatar component is used to display the user's profile picture or initials.</p>
+                </div>
+
+                <div class="separator-line"></div>
+
+                <div class="row-container">
+                    <img class="avatar avatar-sm" src="https://vsthemes.org/uploads/posts/2018-04/1581998375_ed-sheeran_vsthemes_ru-46.jpg" alt="Avatar" />
+                    <img class="avatar avatar-md" src="https://i0.wp.com/indianewengland.com/wp-content/uploads/2016/12/Shankar-Mahadevan.jpg?resize=696%2C696" alt="Avatar" />
+                    <img class="avatar avatar-lg" src="https://sdlhivkecdnems06.cdnsrv.jio.com/c.saavncdn.com/artists/AR_Rahman_500x500.jpg" alt="Avatar" />        
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;img class=&quot;avatar avatar-sm&quot; src=&quot;&lt;Avatar Image URL&gt;&quot; alt=&quot;Avatar Small&quot; /&gt;
+&lt;img class=&quot;avatar avatar-md&quot; src=&quot;&lt;Avatar Image URL&gt;&quot; alt=&quot;Avatar Medium&quot; /&gt;
+&lt;img class=&quot;avatar avatar-lg&quot; src=&quot;&lt;Avatar Image URL&gt;&quot; alt=&quot;Avatar Large&quot; /&gt;
+                </code></pre>
+
+                <div class="separator-line"></div>
+
+                <div class="row-container">
+                    <div class="avatar-text avatar-sm">ES</div>
+                    <div class="avatar-text avatar-md">SM</div>
+                    <div class="avatar-text avatar-lg">ARR</div>
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;div class=&quot;avatar-text avatar-sm&quot;&gt;SM&lt;/div&gt;
+&lt;div class=&quot;avatar-text avatar-md&quot;&gt;SK&lt;/div&gt;
+&lt;div class=&quot;avatar-text avatar-lg&quot;&gt;KP&lt;/div&gt;
+                </code></pre>
+
+            </section>
+
+            <div class="separator-line"></div>
+    
+            <section id="alert">
+
+                <div class="section-header-container">
+                    <h2>Alert</h2>
+                    <p>Alerts are used to describe a state that affects a system, feature, or page.</p>
+                </div>
+
+                <div class="separator-line"></div>
+    
+                <div class="column-container">
+                    <div class="alert alert-danger">
+                        <span class="material-icons-round alert-icon"> error_outline </span>
+                        Danger! Indicates the dangerous / potentially negative action.
+                    </div>
+        
+                    <div class="alert alert-success">
+                        <span class="material-icons-outlined alert-icon"> check_circle </span>
+                        Success! This alert indicates the successful or positive actions.           
+                    </div>
+        
+                    <div class="alert alert-info">
+                        <span class="material-icons-outlined alert-icon"> info </span>
+                        Info! This alert indicates neutral informative change or action.
+                    </div>
+        
+                    <div class="alert alert-warning">
+                        <span class="material-icons-round alert-icon"> warning_amber </span>
+                        Warning! This alert indicates a warning which needs attention.
+                    </div>
+
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;div class=&quot;alert alert-danger&quot;&gt;
+    &lt;span class=&quot;material-icons-round alert-icon&quot;&gt; error_outline &lt;/span&gt;
+    Danger! Indicates a dangerous or potentially negative action.
+&lt;/div&gt;
+        
+&lt;div class=&quot;alert alert-success&quot;&gt;
+    &lt;span class=&quot;material-icons-outlined alert-icon&quot;&gt; check_circle &lt;/span&gt;
+    Success! Indicates a successful or positive action.
+&lt;/div&gt;
+        
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;span class=&quot;material-icons-outlined alert-icon&quot;&gt; info &lt;/span&gt;
+    Info! Indicates a neutral informative change or action.
+&lt;/div&gt;
+        
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+    &lt;span class=&quot;material-icons-round alert-icon&quot;&gt; warning_amber &lt;/span&gt;
+    Warning! Indicates a warning that might need attention.
+&lt;/div&gt;
+</code></pre>
+
+            </section>
+    
+            <section id="badge">
+
+                <div class="section-header-container">
+                    <h2>Badges</h2>
+                    <h3>Badge on Buttons</h3>
+                    <p>Badge as part of a button to display counter.</p>
+                </div>
+
+                <div class="separator-line"></div>
+    
+                <div class="row-container">   
+                    <span class="cart-with-badge">
+                        <span class="material-icons-outlined md-48"> shopping_cart </span>
+                        <span class="badge-number">6</span>
+                    </span>
+        
+                    <span class="wishlist-with-badge">
+                        <span class="material-icons md-48"> favorite_border </span>
+                        <span class="badge-number">3</span>
+                    </span>
+                </div>
+    
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;span class=&quot;cart-with-badge&quot;&gt;
+    &lt;span class=&quot;material-icons-outlined md-48&quot;&gt; shopping_cart &lt;/span&gt;
+    &lt;span class=&quot;badge-number&quot;&gt;6&lt;/span&gt;
+&lt;/span&gt;
+        
+&lt;span class=&quot;wishlist-with-badge&quot;&gt;
+    &lt;span class=&quot;material-icons md-48&quot;&gt; favorite_border &lt;/span&gt;
+    &lt;span class=&quot;badge-number&quot;&gt;3&lt;/span&gt;
+&lt;/span&gt;
+                </code></pre>
+
+                <div class="separator-line"></div>
+
+                <div class="section-header-container">
+                    <h3>Badge on Avatars</h3>
+                    <p>Badge on avatar to display the online / offline status</p>
+                </div>
+
+                <div class="separator-line"></div>
+    
+                <div class="row-container">   
+                    <span class="avatar-with-badge">
+                        <img class="avatar avatar-sm" src="https://i.redd.it/q42190z3zud31.jpg" alt="Avatar" />        
+                        <span class="badge-online"></span>
+                    </span>
+        
+                    <span class="avatar-with-badge">
+                        <div class="avatar-text avatar-sm">KP</div>
+                        <span class="badge-offline"></span>
+                    </span>
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;span class=&quot;avatar-with-badge&quot;&gt;
+    &lt;img class=&quot;avatar avatar-sm&quot; src=&quot;&lt;Avatar Image URL&gt;&quot; alt=&quot;Avatar&quot; /&gt;        
+    &lt;span class=&quot;badge-online&quot;&gt;&lt;/span&gt;
+&lt;/span&gt;
+        
+&lt;span class=&quot;avatar-with-badge&quot;&gt;
+    &lt;div class=&quot;avatar-text avatar-sm&quot;&gt;KP&lt;/div&gt;
+    &lt;span class=&quot;badge-offline&quot;&gt;&lt;/span&gt;
+&lt;/span&gt;
+                </code></pre>
+    
+            </section>
+    
+            <section id="button">
+
+                <div class="section-header-container">
+                    <h2>Buttons</h2>
+                    <p>The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.</p>
+                </div>
+
+                <div class="separator-line"></div>
+                
+                <button class="btn btn-simple">Simple Button</button>
+                
+                <button class="btn btn-outline">Outline Button</button>
+                
+                <button class="btn btn-clear">Clear Button</button>
+    
+                <button class="btn btn-clear">
+                    <span class="material-icons md-18"> add_shopping_cart </span>
+                </button>
+    
+                <button class="btn btn-simple btn-with-icon">
+                        <span class="material-icons md-18"> add_shopping_cart </span>
+                        <span class="btn-text">Add to Cart</span>
+                </button>
+    
+                <button class="btn btn-outline btn-with-icon">
+                    <span class="material-icons md-18"> add_shopping_cart </span>
+                    <span class="btn-text">Add to Cart</span>
+                </button>
+    
+                <button class="btn-simple floating-button">
+                    <a href="#">
+                        <span class="material-icons"> north </span>
+                    </a> 
+                </button>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;button class=&quot;btn btn-simple&quot;&gt; Simple Button &lt;/button&gt;
+
+&lt;button class=&quot;btn btn-outline&quot;&gt; Outline Button &lt;/button&gt;
+
+&lt;button class=&quot;btn btn-clear&quot;&gt; Clear Button &lt;/button&gt;
+
+&lt;button class=&quot;btn btn-clear&quot;&gt;
+    &lt;span class=&quot;material-icons md-18&quot;&gt; add_shopping_cart &lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-simple btn-with-icon&quot;&gt;
+    &lt;span class=&quot;material-icons md-18&quot;&gt; add_shopping_cart &lt;/span&gt;
+    &lt;span class=&quot;btn-text&quot;&gt; Add to Cart &lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-outline btn-with-icon&quot;&gt;
+    &lt;span class=&quot;material-icons md-18&quot;&gt; add_shopping_cart &lt;/span&gt;
+    &lt;span class=&quot;btn-text&quot;&gt; Add to Cart &lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class=&quot;btn-simple floating-button&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+        &lt;span class=&quot;material-icons&quot;&gt; north &lt;/span&gt;
+    &lt;/a&gt;
+&lt;/button&gt;
+                </code></pre>
+
+            </section>
+
+    
+            <section id="card">
+
+                <div class="section-header-container">
+                    <h2>Cards</h2>
+                    <p>Cards are a convenient means of displaying content composed of related information in a flexible-size container, visually resembling a playing card.</p>
+                    <div class="separator-line"></div>
+                    <h3>Vertical Cards:</h3>
+                </div>
+
+    
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="https://img.youtube.com/vi/Qt8WdPccO9U/mqdefault.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-teal"> Piano </span>
+                            <h4>Zaalima Guitar Chords Lesson - Raees</h4>
+                            <p>
+                                ‘Zaalima’ is from the movie ‘Raees’ which starred Shah Rukh Khan in the lead role.
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="https://yt3.ggpht.com/ytc/AAUvwnhA0nwlwEwMnjXfF00GTSKbGoJv40-Wd30AZG2ybQ=s176-c-k-c0x00ffffff-no-rj" alt="user 1">
+                            <div class="user-info">
+                                <h5>Acoustic Pahadi</h5>
+                                <small>Aug 29, 2020</small>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="http://i3.ytimg.com/vi/R_Iw_QYfq_s/maxresdefault.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-purple"> Guitar </span>
+                            <h4>Jaan Nisar Guitar Tutorial - Kedarnath</h4>
+                            <p>
+                                This is a famous song from Kedarnath movie. Check out my Guitar lessons.
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="https://yt3.ggpht.com/ytc/AAUvwnhA0nwlwEwMnjXfF00GTSKbGoJv40-Wd30AZG2ybQ=s176-c-k-c0x00ffffff-no-rj" alt="user 1">
+                            <div class="user-info">
+                                <h5>Acoustic Pahadi</h5>
+                                <small>Aug 29, 2020</small>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="card-header">
+                            <img src="https://img.youtube.com/vi/9j-OIPHM9sA/maxresdefault.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-pink"> Piano </span>
+                            <h4>Kaise Hua (Kabir Singh) | Piano/Keyboard Tutorial</h4>
+                            <p>
+                                This is the beginner tutorial for the Song "Kaise Hua" from the film Kabir Singh. 
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="https://yt3.ggpht.com/ytc/AAUvwnjf-tQh2jMtw9kuLIJSgUFubsHDou0l6TOxdSBo=s176-c-k-c0x00ffffff-no-rj" alt="user 1">
+                            <div class="user-info">
+                                <h5>10 Magical Fingers - Vishal Bagul</h5>
+                                <small>May 12, 2020</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;div class=&quot;card-container&quot;&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-teal&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt; Video Title &lt;/h4&gt;
+            &lt;p&gt; Video Description &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;user&quot;&gt;
+            &lt;img src=&quot;&lt;User Image URL&gt;&quot; alt=&quot;User&quot; /&gt;
+            &lt;div class=&quot;user-info&quot;&gt;
+                &lt;h5&gt; User Name &lt;/h5&gt;
+                &lt;small&gt; Date &lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-purple&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt; Video Title &lt;/h4&gt;
+            &lt;p&gt; Video Description &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;user&quot;&gt;
+            &lt;img src=&quot;&lt;User Image URL&gt;&quot; alt=&quot;User&quot; /&gt;
+            &lt;div class=&quot;user-info&quot;&gt;
+                &lt;h5&gt; User Name &lt;/h5&gt;
+                &lt;small&gt; Date &lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-pink&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt; Video Title &lt;/h4&gt;
+            &lt;p&gt; Video Description &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;user&quot;&gt;
+            &lt;img src=&quot;&lt;User Image URL&gt;&quot; alt=&quot;User&quot; /&gt;
+            &lt;div class=&quot;user-info&quot;&gt;
+                &lt;h5&gt; User Name &lt;/h5&gt;
+                &lt;small&gt; Date &lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+                </code></pre>
+
+                <div class="separator-line"></div>
+    
+                <div class="section-header-container">
+                    <h3>Cards with Dismiss:</h3>
+                </div>
+                
+                
+                <div class="card-container">
+                    <div class="card">
+                        <div class="dismiss-container">
+                            <div class="dismiss">
+                                <button class="btn btn-dismiss">
+                                    <span class="material-icons md-30"> cancel </span>
+                                </button>    
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <img src="https://img.youtube.com/vi/Qt8WdPccO9U/mqdefault.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-teal"> Piano </span>
+                            <h4>Zaalima Guitar Chords Lesson - Raees</h4>
+                            <p>
+                                ‘Zaalima’ is from the movie ‘Raees’ which starred Shah Rukh Khan in the lead role. 
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="https://yt3.ggpht.com/ytc/AAUvwnhA0nwlwEwMnjXfF00GTSKbGoJv40-Wd30AZG2ybQ=s176-c-k-c0x00ffffff-no-rj" alt="user 1">
+                            <div class="user-info">
+                                <h5>Acoustic Pahadi</h5>
+                                <small>Aug 29, 2020</small>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="dismiss-container">
+                            <div class="dismiss">
+                                <button class="btn btn-dismiss">
+                                    <span class="material-icons md-30"> cancel </span>
+                                </button>    
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <img src="http://i3.ytimg.com/vi/R_Iw_QYfq_s/maxresdefault.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-purple"> Guitar </span>
+                            <h4>Jaan Nisar Guitar Tutorial - Kedarnath</h4>
+                            <p>
+                                This is a famous song from Kedarnath movie. Check out my Guitar lessons.
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="https://yt3.ggpht.com/ytc/AAUvwnhA0nwlwEwMnjXfF00GTSKbGoJv40-Wd30AZG2ybQ=s176-c-k-c0x00ffffff-no-rj" alt="user 1">
+                            <div class="user-info">
+                                <h5>Acoustic Pahadi</h5>
+                                <small>Aug 29, 2020</small>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <div class="dismiss-container">
+                            <div class="dismiss">
+                                <button class="btn btn-dismiss">
+                                    <span class="material-icons md-30"> cancel </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <img src="https://img.youtube.com/vi/9j-OIPHM9sA/maxresdefault.jpg" alt="Thumbnail">
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-pink"> Piano </span>
+                            <h4>Kaise Hua (Kabir Singh) | Piano/Keyboard Tutorial</h4>
+                            <p>
+                                This is the beginner tutorial for the Song "Kaise Hua" from the film Kabir Singh. 
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="https://yt3.ggpht.com/ytc/AAUvwnjf-tQh2jMtw9kuLIJSgUFubsHDou0l6TOxdSBo=s176-c-k-c0x00ffffff-no-rj" alt="user 1">
+                            <div class="user-info">
+                                <h5>10 Magical Fingers - Vishal Bagul</h5>
+                                <small>May 12, 2020</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;div class=&quot;card-container&quot;&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;dismiss-container&quot;&gt;
+            &lt;div class=&quot;dismiss&quot;&gt;
+                &lt;button class=&quot;btn btn-dismiss&quot;&gt;
+                    &lt;span class=&quot;material-icons md-30&quot;&gt; cancel &lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-teal&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt; Video Title &lt;/h4&gt;
+            &lt;p&gt; Video Description &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;user&quot;&gt;
+            &lt;img src=&quot;&lt;User Image URL&gt;&quot; alt=&quot;User&quot; /&gt;
+            &lt;div class=&quot;user-info&quot;&gt;
+                &lt;h5&gt; User Name &lt;/h5&gt;
+                &lt;small&gt; Date &lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;dismiss-container&quot;&gt;
+            &lt;div class=&quot;dismiss&quot;&gt;
+                &lt;button class=&quot;btn btn-dismiss&quot;&gt;
+                    &lt;span class=&quot;material-icons md-30&quot;&gt; cancel &lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-purple&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt; Video Title &lt;/h4&gt;
+            &lt;p&gt;&nbsp;Video Description &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;user&quot;&gt;
+            &lt;img src=&quot;&lt;User Image URL&gt;&quot; alt=&quot;User&quot; /&gt;
+            &lt;div class=&quot;user-info&quot;&gt;
+                &lt;h5&gt;User Name&lt;/h5&gt;
+                &lt;small&gt; Date &lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;dismiss-container&quot;&gt;
+            &lt;div class=&quot;dismiss&quot;&gt;
+                &lt;button class=&quot;btn btn-dismiss&quot;&gt;
+                    &lt;span class=&quot;material-icons md-30&quot;&gt; cancel &lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-pink&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt; Video Title &lt;/h4&gt;
+            &lt;p&gt;&nbsp;Video Description &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;user&quot;&gt;
+            &lt;img src=&quot;&lt;User Image URL&gt;&quot; alt=&quot;User&quot; /&gt;
+            &lt;div class=&quot;user-info&quot;&gt;
+                &lt;h5&gt;&nbsp;User Name &lt;/h5&gt;
+                &lt;small&gt; Date &lt;/small&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+                </code> </pre>
+
+                <div class="separator-line"></div>
+    
+                <div class="section-header-container">
+                    <h3>Cards with Badge:</h3>
+                </div>
+    
+                <div class="card-container">
+                    <div class="card card-hover-shadow">
+                        <div class="card-header">
+                            <img src="https://www.movilzona.es/app/uploads/2020/09/iPhone-XR-negro-sin-fondo.png" alt="Thumbnail">
+                            <p class="ribbon-text">Top Rated</p>
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-pink"> Phones </span>
+                            <h4>Apple iPhone XR (Coral, 128 GB) (Includes EarPods, Power Adapter)</h4>
+                            <div>
+                                <span class="original-price">₹41,999</span> <span class="strikethrough-price">₹52,900</span>
+                            </div>
+    
+                            <div class="rating-wrapper">
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-gray card-rating"> star </i>
+                                <span class="card-reviews">1947 reviews</span>
+                            </div>
+    
+                            <div class="flex-columns">
+                                <button class="btn btn-outline btn-with-icon">
+                                    <span class="material-icons-round md-18 fav-span"> favorite_border </span>
+                                 </button>
+    
+                                <button class="btn btn-simple btn-with-icon">
+                                    <span class="material-icons md-18"> add_shopping_cart </span>
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="card card-hover-shadow">
+                        <div class="card-header">
+                            <img src="https://m.media-amazon.com/images/I/71umuN8XVeL.jpg" alt="Thumbnail">
+                            <p class="ribbon-text">Bestseller</p>
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-purple"> Phones </span>
+                            <h4>New Apple iPhone 12 Pro Max (128GB) - Silver</h4>
+                            <div>
+                                <span class="original-price">₹1,25,900</span> <span class="strikethrough-price">₹1,29,900</span>
+                            </div>
+    
+                            <div class="rating-wrapper">
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-gray card-rating"> star </i>
+                                <i class="material-icons-round card-rating-gray card-rating"> star </i>
+                                <span class="card-reviews">1013 reviews</span>
+                            </div>
+    
+                            <div class="flex-columns">
+                                <button class="btn btn-outline btn-with-icon">
+                                    <span class="material-icons-round md-18 fav-span"> favorite_border </span>
+                                 </button>
+    
+                                <button class="btn btn-simple btn-with-icon">
+                                    <span class="material-icons md-18"> add_shopping_cart </span>
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="card card-hover-shadow">
+                        <div class="card-header">
+                            <img src="https://m.media-amazon.com/images/I/81vZCv9kA0L.jpg" alt="Thumbnail">
+                            <p class="ribbon-text">New</p>
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-teal"> Phones </span>
+                            <h4>New Apple iPhone 11 Pro (64GB) - Silver</h4>
+                            <div>
+                                <span class="original-price">₹78,900</span> <span class="strikethrough-price">₹1,06,600</span>
+                            </div>
+    
+                            <div class="rating-wrapper">
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-gray card-rating"> star </i>
+                                <span class="card-reviews">1579 reviews</span>
+                            </div>
+    
+                            <div class="flex-columns">
+                                <button class="btn btn-outline btn-with-icon">
+                                    <span class="material-icons-round md-18 fav-span"> favorite_border </span>
+                                 </button>
+    
+                                <button class="btn btn-simple btn-with-icon">
+                                    <span class="material-icons md-18"> add_shopping_cart </span>
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;div class=&quot;card-container&quot;&gt;
+
+    &lt;div class=&quot;card card-hover-shadow&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+            &lt;p class=&quot;ribbon-text&quot;&gt;Text on Ribbon Badge&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-purple&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt;Product Title&lt;/h4&gt;
+            &lt;div&gt;
+                &lt;span class=&quot;original-price&quot;&gt; ₹ Discounted Price &lt;/span&gt; &lt;span class=&quot;strikethrough-price&quot;&gt; ₹ Original Price &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;rating-wrapper&quot;&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-gray card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;span class=&quot;card-reviews&quot;&gt;1947 reviews&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-columns&quot;&gt;
+                &lt;button class=&quot;btn btn-outline btn-with-icon&quot;&gt;
+                    &lt;span class=&quot;material-icons-round md-18 fav-span&quot;&gt; favorite_border &lt;/span&gt;
+                &lt;/button&gt;
+                &lt;button class=&quot;btn btn-simple btn-with-icon&quot;&gt;
+                    &lt;span class=&quot;material-icons md-18&quot;&gt; add_shopping_cart &lt;/span&gt;
+                    &lt;span class=&quot;btn-text&quot;&gt;Add to Cart&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card card-hover-shadow&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+            &lt;p class=&quot;ribbon-text&quot;&gt;Text on Ribbon Badge&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-teal&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt;Product Title&lt;/h4&gt;
+            &lt;div&gt;
+                &lt;span class=&quot;original-price&quot;&gt; ₹ Discounted Price &lt;/span&gt; &lt;span class=&quot;strikethrough-price&quot;&gt; ₹ Original Price &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;rating-wrapper&quot;&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-gray card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;span class=&quot;card-reviews&quot;&gt;1947 reviews&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-columns&quot;&gt;
+                &lt;button class=&quot;btn btn-outline btn-with-icon&quot;&gt;
+                    &lt;span class=&quot;material-icons-round md-18 fav-span&quot;&gt; favorite_border &lt;/span&gt;
+                &lt;/button&gt;
+                &lt;button class=&quot;btn btn-simple btn-with-icon&quot;&gt;
+                    &lt;span class=&quot;material-icons md-18&quot;&gt; add_shopping_cart &lt;/span&gt;
+                    &lt;span class=&quot;btn-text&quot;&gt;Add to Cart&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;card card-hover-shadow&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+            &lt;p class=&quot;ribbon-text&quot;&gt;Text on Ribbon Badge&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;span class=&quot;colored-tag tag-pink&quot;&gt; Tag Title &lt;/span&gt;
+            &lt;h4&gt;Product Title&lt;/h4&gt;
+            &lt;div&gt;
+                &lt;span class=&quot;original-price&quot;&gt; ₹ Discounted Price &lt;/span&gt; &lt;span class=&quot;strikethrough-price&quot;&gt; ₹ Original Price &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;rating-wrapper&quot;&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;i class=&quot;material-icons-round card-rating-gray card-rating&quot;&gt; star &lt;/i&gt;
+                &lt;span class=&quot;card-reviews&quot;&gt;1947 reviews&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex-columns&quot;&gt;
+                &lt;button class=&quot;btn btn-outline btn-with-icon&quot;&gt;
+                    &lt;span class=&quot;material-icons-round md-18 fav-span&quot;&gt; favorite_border &lt;/span&gt;
+                &lt;/button&gt;
+                &lt;button class=&quot;btn btn-simple btn-with-icon&quot;&gt;
+                    &lt;span class=&quot;material-icons md-18&quot;&gt; add_shopping_cart &lt;/span&gt;
+                    &lt;span class=&quot;btn-text&quot;&gt;Add to Cart&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+                </code></pre>
+
+                <div class="separator-line"></div>
+    
+                <div class="section-header-container">
+                    <h3>Cards with Text Overlay:</h3>
+                </div>
+    
+                <div class="card-container">
+    
+                    <div class="card card-hover-shadow">
+                        <div class="card-text-overlay"><span>Out of Stock</span></div>
+                        <div class="card-header">
+                            <img src="https://m.media-amazon.com/images/I/71umuN8XVeL.jpg" alt="Thumbnail">
+                            <p class="ribbon-text">Bestseller</p>
+                        </div>
+                        <div class="card-body">
+                            <span class="colored-tag tag-purple"> Phones </span>
+                            <h4>New Apple iPhone 12 Pro Max (128GB) - Silver</h4>
+                            <div>
+                                <span class="original-price">₹1,25,900</span> <span class="strikethrough-price">₹1,29,900</span>
+                            </div>
+    
+                            <div class="rating-wrapper">
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-yellow card-rating"> star </i>
+                                <i class="material-icons-round card-rating-gray card-rating"> star </i>
+                                <i class="material-icons-round card-rating-gray card-rating"> star </i>
+                                <span class="card-reviews">1013 reviews</span>
+                            </div>
+    
+                            <div class="flex-columns">
+                                <button class="btn btn-outline btn-with-icon">
+                                    <span class="material-icons-round md-18 fav-span"> favorite_border </span>
+                                 </button>
+    
+                                <button class="btn btn-simple btn-with-icon">
+                                    <span class="material-icons md-18"> add_shopping_cart </span>
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+
+                <pre style="display: block; overflow-x: auto; padding: 4rem 1rem 1rem; background: #111827; color: rgb(214, 222, 235);"><code class="language-javascript">&lt;div class=&quot;card card-hover-shadow&quot;&gt;
+  	&lt;div class=&quot;card-text-overlay&quot;&gt;&lt;span&gt; Out of Stock &lt;/span&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-header&quot;&gt;
+        &lt;img src=&quot;&lt;Thumbnail Image URL&gt;&quot; alt=&quot;Thumbnail&quot; /&gt;
+        &lt;p class=&quot;ribbon-text&quot;&gt; Text on Ribbon Badge &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+        &lt;span class=&quot;colored-tag tag-pink&quot;&gt; Tag Title &lt;/span&gt;
+        &lt;h4&gt; Product Title &lt;/h4&gt;
+        &lt;div&gt;&lt;span class=&quot;original-price&quot;&gt; ₹ Discounted Price &lt;/span&gt; &lt;span class=&quot;strikethrough-price&quot;&gt; ₹ Original Price &lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;rating-wrapper&quot;&gt;
+            &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+            &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+            &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+            &lt;i class=&quot;material-icons-round card-rating-yellow card-rating&quot;&gt; star &lt;/i&gt;
+            &lt;i class=&quot;material-icons-round card-rating-gray card-rating&quot;&gt; star &lt;/i&gt;
+            &lt;span class=&quot;card-reviews&quot;&gt; 1947 reviews &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex-columns&quot;&gt;
+            &lt;button class=&quot;btn btn-outline btn-with-icon&quot;&gt;
+                &lt;span class=&quot;material-icons-round md-18 fav-span&quot;&gt; favorite_border &lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button class=&quot;btn btn-simple btn-with-icon&quot;&gt;
+                &lt;span class=&quot;material-icons md-18&quot;&gt; add_shopping_cart &lt;/span&gt;
+                &lt;span class=&quot;btn-text&quot;&gt; Add to Cart &lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+                </code></pre>
+
+                <div class="separator-line"></div>
+    
+            </section>    
+    
+        </div>
+
+    </div>
+
+    <script src="/prism/prism.js"></script>
+</body>
+</html>
